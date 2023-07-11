@@ -22,3 +22,7 @@ HTML attribute template:
 #contener-view[theme="Name_Theme"]{.
 		/*You CSS code*/.
 	}
+# Mods
+Mods are direct changes to the code to achieve other benefits. Currently, the only official mod for LVC is the following. 
+
+LVC IP, which creates a session based on the IP of the device instead of using cookies. The mod is in the demo version in the folder: Mods
