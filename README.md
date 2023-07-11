@@ -12,3 +12,13 @@ In addition, there are several ready-made counter themes and comments in English
 Author: Lithium
 Relase. 1.0.0
 2023
+
+# Theme
+
+It's a simple system - you create an attribute for html and change the css. Or you can just remove everything and write your own counter look cleanly.
+
+HTML attribute template:
+
+#contener-view[theme="Name_Theme"]{.
+		/*You CSS code*/.
+	}
