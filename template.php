@@ -1,5 +1,5 @@
 <style>
-	 *,
+    *,
     :before,
     :after {
         margin: 0;
@@ -10,22 +10,30 @@
         display: flex;
         margin: 25px;
     }
-	#contener-view{
+    #contener-view{
+    	height: 60px;
+        padding: 12px 20px;
+        font-family: Segoe UI;
+        font-size: 25px;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+	#contener-view[theme="darkmode"]{
+		border: 2px solid #000;
+		color: #fff;
+		background-color: #111;
 		font-family: Segoe UI;
 		font-size: 25px;
 		display: inline-block;
 		border-radius: 5px;
-		border: 2px solid tomato;
 		position: relative;
         font-weight: 600;
         height: 60px;
         padding: 12px 20px;
         outline: none;
-        border: 1px solid black;
-        background-color: transparent;
         cursor: pointer;
 	}
-	#contener-view:after {
+	#contener-view[theme="darkmode"]:after {
         content: "";
         position: absolute;
         width: 100%;
@@ -37,7 +45,7 @@
         transition: all 0.35s;
         border-radius: inherit;
     }
-    #contener-view:after {
+    #contener-view[theme="darkmode"]:after {
         content: "";
         position: absolute;
         width: 100%;
@@ -48,15 +56,14 @@
         z-index: -1;
         transition: all 0.35s;
         border-radius: inherit;
-}
+    }
 
-#contener-view:hover:after {
-  top: 0px;
-  left: 0px;
-}
+    #contener-view:hover:after {
+        top: 0px;
+        left: 0px;
+    }
 	#contener-view[theme="none"]{
 		/*nothing*/
-		color: #fff;
 	}
 	#contener-view[theme="blue"]{
 		border: 2px solid blueviolet;
@@ -66,17 +73,17 @@
 		border: 2px solid yellowgreen;
 		background-color: seagreen;
 	}
-	#contener-view[theme="darkmode"]{
-		border: 2px solid #000;
-		color: #fff;
-		background-color: #111;
-	}
+
 </style>
 
 <?php
-echo "<div theme='darkmode' id='contener-view'>Liczba odwiedzin: " . $visits; 
+echo "<div theme='none' id='contener-view'>Liczba odwiedzin: " . $visits; 
 echo "</div>";
 ?>
+
+
+
+
 
 
 
