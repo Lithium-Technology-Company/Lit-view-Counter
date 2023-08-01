@@ -19,9 +19,10 @@ It's a simple system - you create an attribute for html and change the css. Or y
 
 HTML attribute template:
 
-#contener-view[theme="Name_Theme"]{.
+<code>#contener-view[theme="Name_Theme"]{.
 		/*You CSS code*/.
 	}
+ </code>
 # Mods
 Mods are direct changes to the code to achieve other benefits. Currently, the only official mod for LVC is the following. 
 
